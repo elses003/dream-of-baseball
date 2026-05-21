@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="dashboard-layout">
+
+    <aside class="sidebar">
+        <div class="avatar">會員</div>
+        <h3>{{ current_user.name }}</h3>
+        <p>{{ current_user.email }}</p>
+
+        <ul>
+            <li>會員資料</li>
+            <li><a href="/divelog">潛水日誌</a></li>
+            <li>我的商品</li>
+        </ul>
+    </aside>
+
+    <section class="dashboard-content">
+        <h2>會員資料中心</h2>
+
+        <div class="info-card">
+            <h3>基本資料</h3>
+            <p><strong>姓名：</strong>{{ current_user.name }}</p>
+            <p><strong>Email：</strong>{{ current_user.email }}</p>
+            <p><strong>手機：</strong>{{ current_user.phone }}</p>
+        </div>
+
+        <div class="top-row">
+            <h3>我的刊登商品</h3>
+            <a class="btn small-btn" href="/add_product">刊登新商品</a>
+        </div>
+
+        {% if products %}
+            <div class="product-grid">
+                {% for product in products %}
+                    <div class="product-card">
+                        <div class="image-placeholder">圖片</div>
+                        <h3>{{ product.title }}</h3>
+                        <p class="price">NT$ {{ product.price }}</p>
+                        <p>{{ product.description }}</p>
+                    </div>
+                {% endfor %}
+            </div>
+        {% else %}
+            <div class="empty-box">
+                你目前還沒有刊登商品。
+            </div>
+        {% endif %}
+    </section>
+
+</div>
+
+{% endblock %}

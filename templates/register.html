@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="form-box">
+    <h2>會員註冊</h2>
+    <p class="hint">請填寫基本資料完成註冊</p>
+
+    <form method="POST">
+        <input name="name" placeholder="姓名 / 顯示名稱">
+        <input name="email" placeholder="Email">
+        <input name="phone" placeholder="手機號碼，例如 0912345678">
+        <input name="password" type="password" placeholder="密碼，至少 6 碼">
+        <input name="confirm_password" type="password" placeholder="確認密碼">
+
+        <button>註冊</button>
+    </form>
+
+    {% if error %}
+        <p class="error">{{ error }}</p>
+    {% endif %}
+
+    <p class="link-text">
+        已經有帳號？<a href="/login">前往登入</a>
+    </p>
+</div>
+
+{% endblock %}

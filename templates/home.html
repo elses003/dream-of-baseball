@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<section class="hero">
+    <h2>二手潛水裝備</h2>
+    <p>找到適合你的潛水裝備，也可以刊登自己的二手商品。</p>
+
+    {% if current_user.is_authenticated %}
+        <a class="btn" href="/add_product">我要刊登商品</a>
+    {% else %}
+        <a class="btn" href="/register">立即加入會員</a>
+    {% endif %}
+</section>
+
+<section class="section">
+    <h2>商品列表</h2>
+
+    {% if products %}
+        <div class="product-grid">
+            {% for product in products %}
+                <div class="product-card">
+                    <div class="image-placeholder">圖片</div>
+                    <h3>{{ product.title }}</h3>
+                    <p class="price">NT$ {{ product.price }}</p>
+                    <p>{{ product.description }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <div class="empty-box">
+            目前還沒有商品，登入後可以刊登第一個商品。
+        </div>
+    {% endif %}
+</section>
+
+{% endblock %}

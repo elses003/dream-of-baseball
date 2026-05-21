@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="form-box">
+    <h2>刊登二手商品</h2>
+    <p class="hint">請填寫商品資訊</p>
+
+    <form method="POST">
+        <input name="title" placeholder="商品名稱，例如 OOO">
+        <input name="price" placeholder="價格，例如 800">
+        <textarea name="description" placeholder="商品描述，例如 使用一年、功能正常、附原盒"></textarea>
+
+        <button>送出刊登</button>
+    </form>
+
+    {% if error %}
+        <p class="error">{{ error }}</p>
+    {% endif %}
+</div>
+
+{% endblock %}
