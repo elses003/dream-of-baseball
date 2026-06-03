@@ -1,0 +1,60 @@
+[
+        {
+            "name": "台北市立天母棒球場",
+            "city": "台北市",
+            "address": "臺北市士林區三玉里忠誠路二段77號",
+            "type": "職棒球場",
+            "map_url": "https://www.google.com/maps/place/%E5%8F%B0%E5%8C%97%E5%B8%82%E7%AB%8B%E5%A4%A9%E6%AF%8D%E6%A3%92%E7%90%83%E5%A0%B4/@25.11324,121.5304111,17z/data=!3m1!4b1!4m6!3m5!1s0x3442ae81a030469b:0x1f65196e5aa1053c!8m2!3d25.1132352!4d121.532986!16s%2Fm%2F026_k17?entry=ttu&g_ep=EgoyMDI2MDUzMS4wIKXMDSoASAFQAw%3D%3D"
+        },
+        {
+            "name": "新莊棒球場",
+            "city": "新北市",
+            "address": "新北市新莊區和興街66號",
+            "type": "職棒球場",
+            "map_url":"https://www.google.com/maps/place/%E5%AF%8C%E9%82%A6%E6%82%8D%E5%B0%87%E6%A3%92%E7%90%83%E9%9A%8A+%E6%96%B0%E8%8E%8A%E6%A3%92%E7%90%83%E5%A0%B4/@25.0407183,121.4464633,19z/data=!4m10!1m2!2m1!1z5paw6I6K5qOS55CD5aC0!3m6!1s0x3442a877cfbe0d8f:0xa5ca32ad0d728f39!8m2!3d25.0408957!4d121.4475281!15sCg_mlrDojormo5LnkIPloLRaFCIS5pawIOiOiiDmo5LnkIMg5aC0kgEOYmFzZWJhbGxfZmllbGTgAQA!16s%2Fg%2F11ggsl_5qf?entry=ttu&g_ep=EgoyMDI2MDUzMS4wIKXMDSoASAFQAw%3D%3D"
+        },
+        {
+            "name": "洲際棒球場",
+            "city": "台中市",
+            "address": "臺中市北屯區同榮里崇德路三段835號",
+            "type": "職棒球場",
+            "map_url": "https://www.google.com/maps/place/%E8%87%BA%E4%B8%AD%E6%B4%B2%E9%9A%9B%E6%A3%92%E7%90%83%E5%A0%B4/@24.1994292,120.682272,18z/data=!4m6!3m5!1s0x346917951156a4fd:0x4e48010d8fbdf059!8m2!3d24.1994288!4d120.6839558!16s%2Fm%2F025zbnw?entry=ttu&g_ep=EgoyMDI2MDUzMS4wIKXMDSoASAFQAw%3D%3D"
+        },
+        {
+            "name": "宜昌棒球場",
+            "city": "台中市",
+            "address": "臺中市太平區",
+            "map_url": "https://www.google.com/maps/place/%E5%AE%9C%E6%98%8C%E6%A3%92%E7%90%83%E5%A0%B4/@24.1374047,120.7070172,17z/data=!4m6!3m5!1s0x34693d4acf23e17b:0x627bf96d9ca2c244!8m2!3d24.1374047!4d120.7117808!16s%2Fg%2F11b721z9hj?authuser=0&entry=ttu&g_ep=EgoyMDI2MDUzMS4wIKXMDSoASAFQAw%3D%3D"
+        },
+        {
+            "name": "烏日榮泉球場",
+            "city": "台中市",
+            "address": "臺中市烏日區環河路五段榮泉路平區",
+            "map_url": "https://www.google.com/maps/place/%E7%83%8F%E6%97%A5%E6%A6%AE%E6%B3%89%E7%90%83%E5%A0%B4/@24.1079842,120.5894988,17z/data=!4m10!1m2!2m1!1z54OP5rqq5qau5rOJ5qOS55CD5aC0!3m6!1s0x34693fb6b7f1272b:0xf179fcf7308354aa!8m2!3d24.1078505!4d120.5932499!15sChXng4_muqrmpq7ms4nmo5LnkIPloLSSAQ5iYXNlYmFsbF9maWVsZOABAA!16s%2Fg%2F11ghzlp839?entry=ttu&g_ep=EgoyMDI2MDUzMS4wIKXMDSoASAFQAw%3D%3D"
+        },
+        {
+            "name": "大肚溪棒壘球場",
+            "city": "彰化縣",
+            "address": "彰化縣彰化市三村里河濱路631號對面號",
+            "map_url": "https://www.google.com/maps/place/%E5%A4%A7%E8%82%9A%E6%BA%AA%E6%A3%92%E5%A3%98%E7%90%83%E5%A0%B4/@24.0988125,120.5919047,17z/data=!3m1!4b1!4m6!3m5!1s0x34693eca7fcb8f2f:0xb045b93a322d4376!8m2!3d24.0988077!4d120.5967756!16s%2Fg%2F11b76ld6r4?entry=ttu&g_ep=EgoyMDI2MDUzMS4wIKXMDSoASAFQAw%3D%3D"
+        },
+        {
+            "name": "櫻花棒球場（西苑高中棒球場）",
+            "city": "台中市",
+            "address": "臺中市西屯區何仁里櫻花路18號",
+            "map_url": "https://www.google.com/maps/place/%E6%AB%BB%E8%8A%B1%E6%A3%92%E7%90%83%E5%A0%B4%EF%BC%88%E8%A5%BF%E8%8B%91%E9%AB%98%E4%B8%AD%E6%A3%92%E7%90%83%E5%A0%B4%EF%BC%89/@24.1694009,120.6492561,16z/data=!3m1!4b1!4m6!3m5!1s0x34693d8824f011e1:0x21a8d34930ce5d50!8m2!3d24.169396!4d120.651831!16s%2Fg%2F11bysjq4ld?entry=ttu&g_ep=EgoyMDI2MDUzMS4wIKXMDSoASAFQAw%3D%3D"
+        },
+        {
+            "name": "北勢棒球場",
+            "city": "台中市",
+            "address": "臺中市沙鹿區三鹿里保順一街134號",
+            "map_url": "https://www.google.com/maps/place/%E5%8C%97%E5%8B%A2%E6%A3%92%E7%90%83%E5%A0%B4/@24.2087962,120.5611741,17z/data=!3m1!4b1!4m6!3m5!1s0x3469158f4343e2e3:0x4da81ee732b066e9!8m2!3d24.2087913!4d120.563749!16s%2Fg%2F11g1kllfw_?entry=ttu&g_ep=EgoyMDI2MDUzMS4wIKXMDSoASAFQAw%3D%3D"
+        },
+        {
+            "name": "萬壽棒球場",
+            "city": "台中市",
+            "address": "臺中市西區公正里向上路一段577號",
+            "map_url": "https://www.google.com/maps/place/%E8%87%BA%E4%B8%AD%E8%90%AC%E5%A3%BD%E6%A3%92%E7%90%83%E5%A0%B4/@24.1465559,120.6480401,16z/data=!3m2!4b1!5s0x34693dbdb4064de5:0xac5d944f32053954!4m6!3m5!1s0x34693dbdba117e79:0xefa93e98387692e6!8m2!3d24.146551!4d120.650615!16s%2Fg%2F155qy408?authuser=0&entry=ttu&g_ep=EgoyMDI2MDUzMS4wIKXMDSoASAFQAw%3D%3D"
+        }
+
+    ]

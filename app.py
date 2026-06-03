@@ -5,6 +5,7 @@ from flask_login import (
     login_required, logout_user, current_user
 )
 from flask_bcrypt import Bcrypt
+import json
 import os
 import re
 
@@ -43,11 +44,67 @@ class Product(db.Model):
 def load_user(user_id):
     return User.query.get(int(user_id))
 
-
 @app.route("/")
 def home():
-    products = Product.query.all()
-    return render_template("home.html", products=products)
+    return render_template("home.html")
+
+
+@app.route("/fields")
+def fields():
+    selected_city = request.args.get("city", "全部")
+
+    with open("棒球場.json", "r", encoding="utf-8") as f:
+        all_fields = json.load(f)
+
+    cities = ["全部"]
+
+    for field in all_fields:
+        if field["city"] not in cities:
+            cities.append(field["city"])
+
+    if selected_city != "全部":
+        fields = [
+            field for field in all_fields
+            if field["city"] == selected_city
+        ]
+    else:
+        fields = all_fields
+
+    return render_template(
+        "fields.html",
+        fields=fields,
+        cities=cities,
+        selected_city=selected_city
+    )
+
+@app.route("/practices")
+def practices():
+    selected_city = request.args.get("city", "全部")
+
+    with open("練習場.json", "r", encoding="utf-8") as f:
+        all_fields = json.load(f)
+
+    cities = ["全部"]
+
+    for field in all_fields:
+        if field["city"] not in cities:
+            cities.append(field["city"])
+
+    if selected_city != "全部":
+        fields = [
+            field for field in all_fields
+            if field["city"] == selected_city
+        ]
+    else:
+        fields = all_fields
+
+    return render_template(
+        "practices.html",
+        fields=fields,
+        cities=cities,
+        selected_city=selected_city
+    )
+
 
 
 @app.route("/register", methods=["GET", "POST"])

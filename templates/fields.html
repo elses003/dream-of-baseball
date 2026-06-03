@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<section class="hero">
+    <h2>棒球場分布</h2>
+    <p>查詢全台棒球場資訊</p>
+</section>
+
+<form method="GET">
+    <select name="city">
+        {% for city in cities %}
+        <option value="{{ city }}"
+            {% if city == selected_city %}selected{% endif %}>
+            {{ city }}
+        </option>
+        {% endfor %}
+    </select>
+
+    <button type="submit">查詢</button>
+</form>
+
+<hr>
+
+{% for field in fields %}
+
+<h3>{{ field.name }}</h3>
+
+
+<p>地址：{{ field.address }}</p>
+
+<a href="{{ field.map_url }}" target="_blank">
+    查看 Google 地圖
+</a>
+
+<hr>
+
+{% endfor %}
+
+{% endblock %}
